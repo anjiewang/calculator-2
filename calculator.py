@@ -14,7 +14,8 @@ while True:
         break
     else:
         num1 = float(tokenized[1])
-        num2 = float(tokenized[2])
+        if len(tokenized) == 3:
+            num2 = float(tokenized[2])
         if tokenized[0] == "+":
             print(add(num1, num2))
         elif tokenized[0] == "-":
